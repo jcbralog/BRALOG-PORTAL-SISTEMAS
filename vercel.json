@@ -2,7 +2,8 @@
   "version": 2,
   "builds": [
     { "src": "bralog-portal.html", "use": "@vercel/static" },
-    { "src": "*.png", "use": "@vercel/static" }
+    { "src": "*.png", "use": "@vercel/static" },
+    { "src": "*.mp4", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/", "dest": "/bralog-portal.html" },
