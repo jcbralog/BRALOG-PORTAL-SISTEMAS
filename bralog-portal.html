@@ -28,28 +28,17 @@ body {
 #splash-video {
   position:absolute; inset:0;
   width:100%; height:100%;
-  object-fit:cover;
+  object-fit:contain;
   z-index:1;
 }
-.corner, .scan-line { z-index:2; }
+.corner { z-index:2; }
 
 @keyframes glowPulse {
   0%,100%{ transform:scale(1); opacity:.5; }
   50%    { transform:scale(1.15); opacity:1; }
 }
 
-.scan-line {
-  position:absolute; left:0; right:0; height:2px;
-  background:linear-gradient(90deg, transparent, rgba(147,214,156,.7), transparent);
-  animation:scan 2.2s ease-in-out infinite;
-  pointer-events:none;
-}
-@keyframes scan {
-  0%  { top:0%;   opacity:0; }
-  5%  { opacity:1; }
-  95% { opacity:1; }
-  100%{ top:100%; opacity:0; }
-}
+
 
 
 
@@ -289,7 +278,7 @@ body {
   <div class="corner c-tr"></div>
   <div class="corner c-bl"></div>
   <div class="corner c-br"></div>
-  <div class="scan-line"></div>
+
 
   <video id="splash-video" autoplay muted playsinline preload="auto">
     <source src="White_logo_appearing_animation_202605121658.mp4" type="video/mp4">
