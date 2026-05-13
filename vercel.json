@@ -2,11 +2,15 @@
   "version": 2,
   "builds": [
     { "src": "bralog-portal.html", "use": "@vercel/static" },
-    { "src": "*.png", "use": "@vercel/static" },
-    { "src": "*.mp4", "use": "@vercel/static" }
+    { "src": "public/*.png", "use": "@vercel/static" },
+    { "src": "public/*.mp4", "use": "@vercel/static" },
+    { "src": "public/*.jpg", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/", "dest": "/bralog-portal.html" },
+    { "src": "/(.*\\.png)", "dest": "/public/$1" },
+    { "src": "/(.*\\.mp4)", "dest": "/public/$1" },
+    { "src": "/(.*\\.jpg)", "dest": "/public/$1" },
     { "src": "/(.*)", "dest": "/$1" }
   ]
 }
