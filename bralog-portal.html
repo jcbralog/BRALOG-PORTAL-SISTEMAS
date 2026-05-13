@@ -352,7 +352,7 @@ body {
         <div style="flex:1;height:1px;background:linear-gradient(to right,rgba(255,255,255,.18),transparent);"></div>
       </div>
 
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;">
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;">
 
         <a class="card" id="c1" href="https://operacional-bralog.vercel.app/dashboard" target="_blank">
           <div class="card-icon"><img src="PAINEL OPERACIONAL.png" alt="PAINEL OPERACIONAL" style="width:100%;height:100%;object-fit:cover;border-radius:18px;"/></div>
@@ -372,6 +372,13 @@ body {
           <div class="card-icon"><img src="GESTÃO DE ESTOQUE.png" alt="GESTÃO DE ESTOQUE" style="width:100%;height:100%;object-fit:cover;border-radius:18px;"/></div>
           <div class="card-title">Gestão de<br/>Estoque</div>
           <div class="card-desc">Controle total, rastreabilidade avançada e inventário WMS de última geração.</div>
+          <div class="card-cta">Acessar Sistema <i class="ti ti-arrow-right"></i></div>
+        </a>
+
+        <a class="card" id="c4" href="https://gestao-pedidos-atrasados.vercel.app/" target="_blank">
+          <div class="card-icon"><img src="GESTÃO DE PEDIDOS ATRASADOS.png" alt="GESTÃO DE PEDIDOS ATRASADOS" style="width:100%;height:100%;object-fit:cover;border-radius:18px;"/></div>
+          <div class="card-title">Gestão de<br/>Pedidos Atrasados</div>
+          <div class="card-desc">Monitoramento e recuperação de pedidos em atraso com priorização automática.</div>
           <div class="card-cta">Acessar Sistema <i class="ti ti-arrow-right"></i></div>
         </a>
 
@@ -433,6 +440,7 @@ body {
     setTimeout(()=> document.getElementById('c1').classList.add('anim'), 640);
     setTimeout(()=> document.getElementById('c2').classList.add('anim'), 820);
     setTimeout(()=> document.getElementById('c3').classList.add('anim'), 1000);
+    setTimeout(()=> document.getElementById('c4').classList.add('anim'), 1180);
 
     t('footer', 1100);
 
